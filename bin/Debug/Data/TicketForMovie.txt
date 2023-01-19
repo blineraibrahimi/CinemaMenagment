@@ -1,0 +1,11 @@
+3ee46f24-d507-49de-bce5-91e59dc195db, Shrek, bhfchg,cgfjvhj, Back Area Saturday, December 31, 2022, $5.99
+f83787d5-6470-472f-a691-e7ed184307bb, 2012, j,5, Middle Area Friday, December 23, 2022, $5.99
+da753b6c-8500-4bed-8758-92aea649cd98, Deadpool , j,5, VIP Area Friday, December 23, 2022, $6.29
+17f0316e-cbca-4b58-97ff-df192ad396ab, 2012, bn,5, Front Area Friday, December 23, 2022, $5.09
+Your ticket ID is: 61e41def-836f-4a30-a271-46b2cbcca292,Movie Name is: Mean Girls,Your name: blinera,Contact number: 30000,Seat: Back AreaDate: Friday, December 30, 2022,Price: $8.99
+Your ticket ID is: cc1040f4-594e-4eb7-ba7b-d1dfcbf4ce29,Movie Name is: Mean Girls,Your name: blinera,Contact number: 30000,Seat: Back AreaDate: Friday, December 30, 2022,Price: $6.29
+Your ticket ID is: 798214f8-7e79-4612-86ed-8d8c266c1712,Movie Name is: Barbie in the 12 Dancing Princesses,Your name: kjgaj;f,Contact number: 851328,Seat: Middle Row: 13Date: Saturday, January 28, 2023,Price: $3.99
+Your ticket ID is: 2140496b-6b3b-47ee-ba41-3171cf0f7a51,Movie Name is: Barbie in the 12 Dancing Princesses,Your name: kjgaj;f,Contact number: 851328,Seat: Front Row: 9Date: Saturday, January 28, 2023,Price: $3.99
+Your ticket ID is: f8815757-10c4-4acf-8fb6-db86e0ce0e61,Movie Name is: Mean Girls,Your name: sdgfhg,Contact number: dfhg,Seat: Front Row: 8Date: Saturday, February 4, 2023,Price: $4.19
+Your ticket ID is: 7b8e13f5-9295-46e4-89a4-fe7fbc6deb49,Movie Name is: Shrek,Your name: sfdgfhgh,Contact number: 456789,Seat: Front Row: 8Date: Saturday, January 21, 2023,Price: $5.99
+Your ticket ID is: b93b964c-eaae-44eb-b714-cb87f21e3f7f,Movie Name is: 2012,Your name: bkrf,Contact number: fvcsr,Seat: Back Row: 22Date: Sunday, January 29, 2023,Price: $8.29

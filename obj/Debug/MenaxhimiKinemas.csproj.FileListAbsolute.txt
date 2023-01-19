@@ -1,0 +1,35 @@
+C:\Users\HP\OneDrive\Desktop\MenaxhimiKinemas\bin\Debug\MenaxhimiKinemas.exe.config
+C:\Users\HP\OneDrive\Desktop\MenaxhimiKinemas\bin\Debug\MenaxhimiKinemas.exe
+C:\Users\HP\OneDrive\Desktop\MenaxhimiKinemas\bin\Debug\MenaxhimiKinemas.pdb
+C:\Users\HP\OneDrive\Desktop\MenaxhimiKinemas\obj\Debug\MenaxhimiKinemas.csproj.AssemblyReference.cache
+C:\Users\HP\OneDrive\Desktop\MenaxhimiKinemas\obj\Debug\MenaxhimiKinemas.csproj.SuggestedBindingRedirects.cache
+C:\Users\HP\OneDrive\Desktop\MenaxhimiKinemas\obj\Debug\MenaxhimiKinemas.Cinema.resources
+C:\Users\HP\OneDrive\Desktop\MenaxhimiKinemas\obj\Debug\MenaxhimiKinemas.Properties.Resources.resources
+C:\Users\HP\OneDrive\Desktop\MenaxhimiKinemas\obj\Debug\MenaxhimiKinemas.csproj.GenerateResource.cache
+C:\Users\HP\OneDrive\Desktop\MenaxhimiKinemas\obj\Debug\MenaxhimiKinemas.csproj.CoreCompileInputs.cache
+C:\Users\HP\OneDrive\Desktop\MenaxhimiKinemas\obj\Debug\MenaxhimiKinemas.exe
+C:\Users\HP\OneDrive\Desktop\MenaxhimiKinemas\obj\Debug\MenaxhimiKinemas.pdb
+C:\Users\desberato\Desktop\MenaxhimiKinemas\bin\Debug\MenaxhimiKinemas.exe.config
+C:\Users\desberato\Desktop\MenaxhimiKinemas\bin\Debug\MenaxhimiKinemas.exe
+C:\Users\desberato\Desktop\MenaxhimiKinemas\bin\Debug\MenaxhimiKinemas.pdb
+C:\Users\desberato\Desktop\MenaxhimiKinemas\obj\Debug\MenaxhimiKinemas.csproj.AssemblyReference.cache
+C:\Users\desberato\Desktop\MenaxhimiKinemas\obj\Debug\MenaxhimiKinemas.csproj.SuggestedBindingRedirects.cache
+C:\Users\desberato\Desktop\MenaxhimiKinemas\obj\Debug\MenaxhimiKinemas.Cinema.resources
+C:\Users\desberato\Desktop\MenaxhimiKinemas\obj\Debug\MenaxhimiKinemas.Properties.Resources.resources
+C:\Users\desberato\Desktop\MenaxhimiKinemas\obj\Debug\MenaxhimiKinemas.csproj.GenerateResource.cache
+C:\Users\desberato\Desktop\MenaxhimiKinemas\obj\Debug\MenaxhimiKinemas.csproj.CoreCompileInputs.cache
+C:\Users\desberato\Desktop\MenaxhimiKinemas\obj\Debug\MenaxhimiKinemas.exe
+C:\Users\desberato\Desktop\MenaxhimiKinemas\obj\Debug\MenaxhimiKinemas.pdb
+C:\Users\Kaltrina\Desktop\blinera - uni\MenaxhimiKinemas\bin\Debug\MenaxhimiKinemas.exe.config
+C:\Users\Kaltrina\Desktop\blinera - uni\MenaxhimiKinemas\bin\Debug\MenaxhimiKinemas.exe
+C:\Users\Kaltrina\Desktop\blinera - uni\MenaxhimiKinemas\bin\Debug\MenaxhimiKinemas.pdb
+C:\Users\Kaltrina\Desktop\blinera - uni\MenaxhimiKinemas\obj\Debug\MenaxhimiKinemas.csproj.AssemblyReference.cache
+C:\Users\Kaltrina\Desktop\blinera - uni\MenaxhimiKinemas\obj\Debug\MenaxhimiKinemas.csproj.SuggestedBindingRedirects.cache
+C:\Users\Kaltrina\Desktop\blinera - uni\MenaxhimiKinemas\obj\Debug\MenaxhimiKinemas.Cinema.resources
+C:\Users\Kaltrina\Desktop\blinera - uni\MenaxhimiKinemas\obj\Debug\MenaxhimiKinemas.Properties.Resources.resources
+C:\Users\Kaltrina\Desktop\blinera - uni\MenaxhimiKinemas\obj\Debug\MenaxhimiKinemas.csproj.GenerateResource.cache
+C:\Users\Kaltrina\Desktop\blinera - uni\MenaxhimiKinemas\obj\Debug\MenaxhimiKinemas.csproj.CoreCompileInputs.cache
+C:\Users\Kaltrina\Desktop\blinera - uni\MenaxhimiKinemas\obj\Debug\MenaxhimiKinemas.exe
+C:\Users\Kaltrina\Desktop\blinera - uni\MenaxhimiKinemas\obj\Debug\MenaxhimiKinemas.pdb
+C:\Users\HP\OneDrive\Desktop\MenaxhimiKinemas\obj\Debug\MenaxhimiKinemas.FrmEvents.resources
+C:\Users\Kaltrina\Desktop\blinera - uni\MenaxhimiKinemas\obj\Debug\MenaxhimiKinemas.FrmEvents.resources

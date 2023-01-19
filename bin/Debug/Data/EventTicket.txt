@@ -1,0 +1,4 @@
+67c051ad-fb45-470e-9b4e-86af3db17c78, Home Alone, blinera, Saturday, December 24, 2022, 3.99
+e4299424-a2b5-47ef-bf2f-fd8322276cd0, Elf, njfnb, Saturday, December 24, 2022, 21:00 3.99
+d75c5523-7cb6-460e-b320-48325faa92fa, Home Alone, nj, Saturday, December 24, 2022, 18:00 3.99
+42475a7f-8c23-4c44-80f4-c291de945289, The Princess Switch, blinera, Saturday, December 24, 2022, 18:00 3.99

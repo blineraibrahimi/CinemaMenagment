@@ -1,0 +1,11 @@
+C:\Users\desberato\Desktop\MenaxhimiKinemas\bin\Debug\MenaxhimiKinemas.exe.config
+C:\Users\desberato\Desktop\MenaxhimiKinemas\bin\Debug\MenaxhimiKinemas.exe
+C:\Users\desberato\Desktop\MenaxhimiKinemas\bin\Debug\MenaxhimiKinemas.pdb
+C:\Users\desberato\Desktop\MenaxhimiKinemas\obj\Debug\Cinema_Managmet.csproj.AssemblyReference.cache
+C:\Users\desberato\Desktop\MenaxhimiKinemas\obj\Debug\Cinema_Managmet.csproj.SuggestedBindingRedirects.cache
+C:\Users\desberato\Desktop\MenaxhimiKinemas\obj\Debug\MenaxhimiKinemas.Cinema.resources
+C:\Users\desberato\Desktop\MenaxhimiKinemas\obj\Debug\MenaxhimiKinemas.Properties.Resources.resources
+C:\Users\desberato\Desktop\MenaxhimiKinemas\obj\Debug\Cinema_Managmet.csproj.GenerateResource.cache
+C:\Users\desberato\Desktop\MenaxhimiKinemas\obj\Debug\Cinema_Managmet.csproj.CoreCompileInputs.cache
+C:\Users\desberato\Desktop\MenaxhimiKinemas\obj\Debug\MenaxhimiKinemas.exe
+C:\Users\desberato\Desktop\MenaxhimiKinemas\obj\Debug\MenaxhimiKinemas.pdb
