@@ -21,11 +21,11 @@ namespace MenaxhimiKinemas
         {
             InitializeComponent();
         }
-      
 
         Technology objTech;
         Genre objGenre;
         TheatreRoom objTheatreRoom;
+        //list of movies to save
         List<Movies> MovieList = new List<Movies>()
         {
             new Movies ( "Deadpool", "Deadpool", new DateTime(2016, 6, 28), 213, false, 5.99 ),
@@ -39,12 +39,15 @@ namespace MenaxhimiKinemas
             new Movies ( "Black Panther: Wakanda Forever", "2012", new DateTime(2016, 6, 28), 213, false, 5.99 )
         };
 
+        //list of tickets
         List<Subscription> subscriptionsList = new List<Subscription>()
         {
-            new Subscription("blinera","bina",true)
+            new Subscription("blinera","bina",true),
+            new Subscription("test","test", false),
+            new Subscription("fjolla", "njomza", true)
         };
 
-    //This button registers a new movie
+        //This button registers a new movie
         private void BtnSave_Click(object sender, EventArgs e)
         {
             try
@@ -143,7 +146,12 @@ namespace MenaxhimiKinemas
                     {
                         lblRating.Text += "This movie has the highest rating: 5.5!";
                     }
-                    CheckIfSubEmailExists(txtSubEmail.Text);
+
+                    if(txtSubEmail.Text != "")
+                    {
+                        CheckIfSubEmailExists(txtSubEmail.Text);
+                    }
+                   
                     //The datas are then passed down to the class, which are validated in the consturctor
                     Tickets objTickets = new Tickets(cmbMovieName.SelectedItem.ToString(), txtUserName.Text, txtContactNo.Text, cmbSeat.SelectedItem.ToString(), date, txtPrice.Text);
                     objTickets.SaveTicketToFile();
@@ -163,15 +171,7 @@ namespace MenaxhimiKinemas
         //When the selected movie is chosen, show the significant price on the textbox
         private void cmbMovieName_SelectedIndexChanged(object sender, EventArgs e)
         {
-            GetMoviePrice();
-        }
-        private void rbtnFifteen_CheckedChanged(object sender, EventArgs e)
-        {
-            GetMoviePrice();
-        }
-        private void rbtnThirty_CheckedChanged(object sender, EventArgs e)
-        {
-            GetMoviePrice();
+            GetMoviePrice(false);
         }
 
         //When this button is executed, it will close the form/program
@@ -189,9 +189,7 @@ namespace MenaxhimiKinemas
             cmbSeat.Text = null;
             txtDate.Value = DateTime.Now;
             txtPrice.Text = "";
-            rbtnFifteen.Checked = false;
-            rbtnThirty.Checked = false;
-            rbtnNoSub.Checked = false;
+            txtSubEmail.Text = "";
         }
 
         //When the form loads, the schedule table will be displayed through the method
@@ -287,37 +285,6 @@ namespace MenaxhimiKinemas
             }
         }
 
-        public void GetMoviePrice()
-        {
-            foreach (Movies movie in MovieList)
-            {
-                if (cmbMovieName.SelectedItem.ToString() == movie.Name_)
-                {
-                    if (rbtnFifteen.Checked == true)
-                    {
-                        double originalprice = movie.Price;
-                        double discount = originalprice * 0.15;
-                        double newPrice = originalprice - discount;
-
-                        txtPrice.Text = "$" + Convert.ToString(Math.Round((newPrice), 2));
-                    }
-                    else if (rbtnThirty.Checked == true)
-                    {
-                        double originalprice = movie.Price;
-                        double discount = originalprice * 0.30;
-                        double newPrice = originalprice - discount;
-
-                        txtPrice.Text = "$" + Convert.ToString(Math.Round((newPrice), 2));
-                    }
-                    else
-                    {
-                        txtPrice.Text = "$" + Convert.ToString(movie.Price);
-                    }
-                }
-            
-            }
-
-        }
         public void GetMoviePrice(bool subType)
         {
             foreach (Movies movie in MovieList)
@@ -333,6 +300,7 @@ namespace MenaxhimiKinemas
                             double newPrice = originalprice - discount;
 
                             txtPrice.Text = "$" + Convert.ToString(Math.Round((newPrice), 2));
+                            subExists = false;
                         }
                         else if (subType == false)
                         {
@@ -341,10 +309,10 @@ namespace MenaxhimiKinemas
                             double newPrice = originalprice - discount;
 
                             txtPrice.Text = "$" + Convert.ToString(Math.Round((newPrice), 2));
+                            subExists = false;
                         }
-
                     }
-                    else
+                    else if(subExists == false)
                     {
                         txtPrice.Text = "$" + Convert.ToString(movie.Price);
                     }
@@ -359,20 +327,24 @@ namespace MenaxhimiKinemas
             f2.ShowDialog();
         }
 
-        bool subExists = false;
+        bool subExists;
         public void CheckIfSubEmailExists(string email)
         {
+            subExists = false;
             foreach (Subscription subscription in subscriptionsList)
             {
                 if (subscription.Email.Equals(email))
                 {
-                    Console.WriteLine("Brotha, in christ u exist!");
-                    subExists= true;
+                    subExists = true;
                     GetMoviePrice(subscription.SubscriptionType);
+                    return;
                 }
-
             }
 
+            if(subExists == false)
+            {
+                MessageBox.Show("This user does not exist, please check your email entry!");
+            }
         }
     }
 }
