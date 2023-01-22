@@ -39,6 +39,11 @@ namespace MenaxhimiKinemas
             new Movies ( "Black Panther: Wakanda Forever", "2012", new DateTime(2016, 6, 28), 213, false, 5.99 )
         };
 
+        List<Subscription> subscriptionsList = new List<Subscription>()
+        {
+            new Subscription("blinera","bina",true)
+        };
+
     //This button registers a new movie
         private void BtnSave_Click(object sender, EventArgs e)
         {
@@ -138,10 +143,9 @@ namespace MenaxhimiKinemas
                     {
                         lblRating.Text += "This movie has the highest rating: 5.5!";
                     }
-
+                    CheckIfSubEmailExists(txtSubEmail.Text);
                     //The datas are then passed down to the class, which are validated in the consturctor
                     Tickets objTickets = new Tickets(cmbMovieName.SelectedItem.ToString(), txtUserName.Text, txtContactNo.Text, cmbSeat.SelectedItem.ToString(), date, txtPrice.Text);
-  
                     objTickets.SaveTicketToFile();
                     //Then the data is displayed on the message box using the method that was created in the class
                     MessageBox.Show(objTickets.ShowTicket(), "You have booked your ticket successfully!", MessageBoxButtons.OKCancel);
@@ -270,7 +274,8 @@ namespace MenaxhimiKinemas
                 }
 
                 Subscription subscription = new Subscription(txtUsernameSubs.Text, txtEmailSubs.Text, subType);
-                subscription.SaveSubscriptionToFile();
+                subscriptionsList.Add(subscription);
+                //subscription.SaveSubscriptionToFile();
 
                 MessageBox.Show("You have subscribed!", "Subscribed",
                     MessageBoxButtons.OK,
@@ -309,8 +314,43 @@ namespace MenaxhimiKinemas
                         txtPrice.Text = "$" + Convert.ToString(movie.Price);
                     }
                 }
-            }
             
+            }
+
+        }
+        public void GetMoviePrice(bool subType)
+        {
+            foreach (Movies movie in MovieList)
+            {
+                if (cmbMovieName.SelectedItem.ToString() == movie.Name_)
+                {
+                    if (subExists == true)
+                    {
+                        if (subType == true)
+                        {
+                            double originalprice = movie.Price;
+                            double discount = originalprice * 0.15;
+                            double newPrice = originalprice - discount;
+
+                            txtPrice.Text = "$" + Convert.ToString(Math.Round((newPrice), 2));
+                        }
+                        else if (subType == false)
+                        {
+                            double originalprice = movie.Price;
+                            double discount = originalprice * 0.30;
+                            double newPrice = originalprice - discount;
+
+                            txtPrice.Text = "$" + Convert.ToString(Math.Round((newPrice), 2));
+                        }
+
+                    }
+                    else
+                    {
+                        txtPrice.Text = "$" + Convert.ToString(movie.Price);
+                    }
+                }
+            }
+
         }
 
         private void btnChristmasNight_Click(object sender, EventArgs e)
@@ -319,5 +359,20 @@ namespace MenaxhimiKinemas
             f2.ShowDialog();
         }
 
+        bool subExists = false;
+        public void CheckIfSubEmailExists(string email)
+        {
+            foreach (Subscription subscription in subscriptionsList)
+            {
+                if (subscription.Email.Equals(email))
+                {
+                    Console.WriteLine("Brotha, in christ u exist!");
+                    subExists= true;
+                    GetMoviePrice(subscription.SubscriptionType);
+                }
+
+            }
+
+        }
     }
 }

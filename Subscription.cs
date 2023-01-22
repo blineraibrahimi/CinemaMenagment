@@ -18,12 +18,17 @@ namespace MenaxhimiKinemas
         //default true for 1 month subscription
         public bool SubscriptionType { get; set; } = true;
 
+        //List<Subscription> Subscriptions = new List<Subscription>();
+
 
         public Subscription(string fullname, string email, bool subscriptionType)
         {
             Name_ = fullname;
             Email = email;
             SubscriptionType = subscriptionType;
+
+            //Subscription objsub = new Subscription(Name_, email, subscriptionType); // ---- ???
+            //Subscriptions.Add(objsub);
         }
 
         public void SaveSubscriptionToFile()

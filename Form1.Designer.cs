@@ -124,6 +124,8 @@ namespace MenaxhimiKinemas
             this.btnLadiesNight = new System.Windows.Forms.Button();
             this.btnValentinesDay = new System.Windows.Forms.Button();
             this.btnChristmasNight = new System.Windows.Forms.Button();
+            this.label34 = new System.Windows.Forms.Label();
+            this.txtSubEmail = new System.Windows.Forms.TextBox();
             this.Tabs.SuspendLayout();
             this.MoviesTab.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -474,6 +476,8 @@ namespace MenaxhimiKinemas
             this.TicketTab.BackColor = System.Drawing.Color.White;
             this.TicketTab.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("TicketTab.BackgroundImage")));
             this.TicketTab.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.TicketTab.Controls.Add(this.label34);
+            this.TicketTab.Controls.Add(this.txtSubEmail);
             this.TicketTab.Controls.Add(this.rbtnNoSub);
             this.TicketTab.Controls.Add(this.rbtnThirty);
             this.TicketTab.Controls.Add(this.rbtnFifteen);
@@ -507,7 +511,7 @@ namespace MenaxhimiKinemas
             // 
             this.rbtnNoSub.AutoSize = true;
             this.rbtnNoSub.BackColor = System.Drawing.Color.Transparent;
-            this.rbtnNoSub.Location = new System.Drawing.Point(459, 451);
+            this.rbtnNoSub.Location = new System.Drawing.Point(426, 508);
             this.rbtnNoSub.Name = "rbtnNoSub";
             this.rbtnNoSub.Size = new System.Drawing.Size(121, 20);
             this.rbtnNoSub.TabIndex = 27;
@@ -519,7 +523,7 @@ namespace MenaxhimiKinemas
             // 
             this.rbtnThirty.AutoSize = true;
             this.rbtnThirty.BackColor = System.Drawing.Color.Transparent;
-            this.rbtnThirty.Location = new System.Drawing.Point(340, 452);
+            this.rbtnThirty.Location = new System.Drawing.Point(307, 509);
             this.rbtnThirty.Name = "rbtnThirty";
             this.rbtnThirty.Size = new System.Drawing.Size(73, 20);
             this.rbtnThirty.TabIndex = 26;
@@ -532,7 +536,7 @@ namespace MenaxhimiKinemas
             // 
             this.rbtnFifteen.AutoSize = true;
             this.rbtnFifteen.BackColor = System.Drawing.Color.Transparent;
-            this.rbtnFifteen.Location = new System.Drawing.Point(222, 452);
+            this.rbtnFifteen.Location = new System.Drawing.Point(189, 509);
             this.rbtnFifteen.Name = "rbtnFifteen";
             this.rbtnFifteen.Size = new System.Drawing.Size(73, 20);
             this.rbtnFifteen.TabIndex = 25;
@@ -546,7 +550,7 @@ namespace MenaxhimiKinemas
             this.label19.AutoSize = true;
             this.label19.BackColor = System.Drawing.Color.Transparent;
             this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.Location = new System.Drawing.Point(87, 451);
+            this.label19.Location = new System.Drawing.Point(54, 508);
             this.label19.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(102, 20);
@@ -569,7 +573,7 @@ namespace MenaxhimiKinemas
             this.lblRating.AutoSize = true;
             this.lblRating.BackColor = System.Drawing.Color.Transparent;
             this.lblRating.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblRating.Location = new System.Drawing.Point(134, 559);
+            this.lblRating.Location = new System.Drawing.Point(634, 121);
             this.lblRating.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblRating.Name = "lblRating";
             this.lblRating.Size = new System.Drawing.Size(0, 22);
@@ -593,7 +597,7 @@ namespace MenaxhimiKinemas
             this.label10.AutoSize = true;
             this.label10.BackColor = System.Drawing.Color.Transparent;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(87, 405);
+            this.label10.Location = new System.Drawing.Point(54, 403);
             this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(48, 20);
@@ -605,7 +609,7 @@ namespace MenaxhimiKinemas
             this.label9.AutoSize = true;
             this.label9.BackColor = System.Drawing.Color.Transparent;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(87, 355);
+            this.label9.Location = new System.Drawing.Point(54, 353);
             this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(45, 20);
@@ -617,7 +621,7 @@ namespace MenaxhimiKinemas
             this.label8.AutoSize = true;
             this.label8.BackColor = System.Drawing.Color.Transparent;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(87, 308);
+            this.label8.Location = new System.Drawing.Point(54, 306);
             this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(43, 20);
@@ -629,7 +633,7 @@ namespace MenaxhimiKinemas
             this.label7.AutoSize = true;
             this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(87, 252);
+            this.label7.Location = new System.Drawing.Point(54, 250);
             this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(97, 20);
@@ -641,7 +645,7 @@ namespace MenaxhimiKinemas
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(87, 201);
+            this.label6.Location = new System.Drawing.Point(54, 199);
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(92, 20);
@@ -653,7 +657,7 @@ namespace MenaxhimiKinemas
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(87, 151);
+            this.label5.Location = new System.Drawing.Point(54, 149);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(102, 20);
@@ -662,7 +666,7 @@ namespace MenaxhimiKinemas
             // 
             // btnExit
             // 
-            this.btnExit.Location = new System.Drawing.Point(405, 501);
+            this.btnExit.Location = new System.Drawing.Point(405, 558);
             this.btnExit.Margin = new System.Windows.Forms.Padding(4);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(125, 41);
@@ -673,7 +677,7 @@ namespace MenaxhimiKinemas
             // 
             // btnBook
             // 
-            this.btnBook.Location = new System.Drawing.Point(245, 501);
+            this.btnBook.Location = new System.Drawing.Point(245, 558);
             this.btnBook.Margin = new System.Windows.Forms.Padding(4);
             this.btnBook.Name = "btnBook";
             this.btnBook.Size = new System.Drawing.Size(125, 41);
@@ -684,7 +688,7 @@ namespace MenaxhimiKinemas
             // 
             // btnReset
             // 
-            this.btnReset.Location = new System.Drawing.Point(78, 501);
+            this.btnReset.Location = new System.Drawing.Point(78, 558);
             this.btnReset.Margin = new System.Windows.Forms.Padding(4);
             this.btnReset.Name = "btnReset";
             this.btnReset.Size = new System.Drawing.Size(125, 41);
@@ -1219,6 +1223,27 @@ namespace MenaxhimiKinemas
             this.btnChristmasNight.UseVisualStyleBackColor = true;
             this.btnChristmasNight.Click += new System.EventHandler(this.btnChristmasNight_Click);
             // 
+            // label34
+            // 
+            this.label34.AutoSize = true;
+            this.label34.BackColor = System.Drawing.Color.Transparent;
+            this.label34.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label34.Location = new System.Drawing.Point(54, 452);
+            this.label34.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label34.Name = "label34";
+            this.label34.Size = new System.Drawing.Size(149, 20);
+            this.label34.TabIndex = 29;
+            this.label34.Text = "Subscription Email";
+            // 
+            // txtSubEmail
+            // 
+            this.txtSubEmail.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.txtSubEmail.Location = new System.Drawing.Point(212, 450);
+            this.txtSubEmail.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtSubEmail.Name = "txtSubEmail";
+            this.txtSubEmail.Size = new System.Drawing.Size(265, 22);
+            this.txtSubEmail.TabIndex = 28;
+            // 
             // Cinema
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -1354,6 +1379,8 @@ namespace MenaxhimiKinemas
         private System.Windows.Forms.PictureBox pictureBox6;
         private System.Windows.Forms.TextBox txtMoviePrice;
         private System.Windows.Forms.Label label33;
+        private System.Windows.Forms.Label label34;
+        private System.Windows.Forms.TextBox txtSubEmail;
     }
 }
 

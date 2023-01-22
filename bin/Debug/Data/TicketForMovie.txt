@@ -9,3 +9,13 @@ Your ticket ID is: 2140496b-6b3b-47ee-ba41-3171cf0f7a51,Movie Name is: Barbie in
 Your ticket ID is: f8815757-10c4-4acf-8fb6-db86e0ce0e61,Movie Name is: Mean Girls,Your name: sdgfhg,Contact number: dfhg,Seat: Front Row: 8Date: Saturday, February 4, 2023,Price: $4.19
 Your ticket ID is: 7b8e13f5-9295-46e4-89a4-fe7fbc6deb49,Movie Name is: Shrek,Your name: sfdgfhgh,Contact number: 456789,Seat: Front Row: 8Date: Saturday, January 21, 2023,Price: $5.99
 Your ticket ID is: b93b964c-eaae-44eb-b714-cb87f21e3f7f,Movie Name is: 2012,Your name: bkrf,Contact number: fvcsr,Seat: Back Row: 22Date: Sunday, January 29, 2023,Price: $8.29
+Your ticket ID is: 3a692996-c6f6-47c4-91dd-91a1d67c86cb,Movie Name is: Barbie in the 12 Dancing Princesses,Your name: ghh,Contact number: ddfgv,Seat: Front Row: 10Date: Sunday, February 5, 2023,Price: $3.99
+Your ticket ID is: 090f77a4-e012-47b4-858a-06602c61fe11,Movie Name is: Beatuy & the Beast,Your name: sdfbn,Contact number: fghn,Seat: Middle Row: 13Date: Saturday, February 4, 2023,Price: $1.73
+Your ticket ID is: 6185c6c7-39e6-453c-bb19-ef28ec684c1f,Movie Name is: 2012,Your name: hgjbk,Contact number: fghj,Seat: Back Row: 22Date: Sunday, February 5, 2023,Price: $8.29
+Your ticket ID is: 4b7a4f78-dcf1-41c6-a997-a9a234bb4afe,Movie Name is: 2012,Your name: kiio,Contact number: ippip,Seat: Middle Row: 14Date: Sunday, January 29, 2023,Price: $8.29
+Your ticket ID is: b0956b65-f2e4-4603-af01-920081ba20fb,Movie Name is: Deadpool,Your name: hfhj,Contact number: hgj,Seat: Back Row: 22Date: Sunday, February 5, 2023,Price: $5.99
+Your ticket ID is: adc1621a-b4c9-4ebb-9c77-23c8f3dd9564,Movie Name is: Deadpool,Your name: fxhvyj,Contact number: fgyuui,Seat: Middle Row: 13Date: Sunday, February 5, 2023,Price: $5.99
+Your ticket ID is: daba9459-ab68-478a-9b5a-7e6b1b03f016,Movie Name is: Grown Ups,Your name: kjjn,Contact number: kjpkp,Seat: Back Row: 22Date: Sunday, February 12, 2023,Price: $5.99
+Your ticket ID is: 81092cb5-e305-4419-93cb-e54e5f632b27,Movie Name is: Mean Girls,Your name: khjk,Contact number: kjlj,Seat: Middle Row: 16Date: Monday, January 23, 2023,Price: $5.99
+Your ticket ID is: 897761f0-066e-4f6d-8240-2c62f51bf7b7,Movie Name is: Mean Girls,Your name: tyiuoi,Contact number: dgfhgjhkj,Seat: Front Row: 4Date: Sunday, February 5, 2023,Price: $5.99
+Your ticket ID is: 64bdf07b-ca08-41cf-bbd0-e80cbc456169,Movie Name is: Mean Girls,Your name: dfghyu,Contact number: fgh,Seat: Front Row: 9Date: Sunday, February 5, 2023,Price: $5.09
