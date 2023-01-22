@@ -30,10 +30,10 @@ namespace MenaxhimiKinemas
             {
                 DateTime date = txtChristmasDate.Value.Date;
 
-                Tickets tickets = new Tickets(cmbChristmasMovie.SelectedItem.ToString(), date, txtUserNameEvent.Text, "3.99", cmbTime.SelectedItem.ToString());
-                tickets.SaveEventTicketToFile();
+                EventTicket tickets = new EventTicket(cmbChristmasMovie.SelectedItem.ToString(), date, txtUserNameEvent.Text, "3.99", cmbTime.SelectedItem.ToString());
+                tickets.SaveTicketToFile();
 
-                MessageBox.Show(tickets.ShowEventTicket(), "You have booked your ticket successfully!",
+                MessageBox.Show(tickets.ShowTicket(), "You have booked your ticket successfully!",
                     MessageBoxButtons.OKCancel);
 
             }

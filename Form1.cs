@@ -12,6 +12,8 @@ using System.Collections;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.TrackBar;
 using System.Security.Policy;
 using System.Diagnostics;
+using Personi; //dll file personi
+using Adresa; //dll file adresa
 
 namespace MenaxhimiKinemas
 {
@@ -87,7 +89,9 @@ namespace MenaxhimiKinemas
                 rbtnSafe.Checked = false;
                 dtpMovieLaunch.Value = DateTime.Now;
                 txtMoviePrice = null;
-
+                
+                //Personi.Personi.
+                //Adresa.Adresa.
             }
             catch (Exception error)
             {
@@ -153,7 +157,7 @@ namespace MenaxhimiKinemas
                     }
                    
                     //The datas are then passed down to the class, which are validated in the consturctor
-                    Tickets objTickets = new Tickets(cmbMovieName.SelectedItem.ToString(), txtUserName.Text, txtContactNo.Text, cmbSeat.SelectedItem.ToString(), date, txtPrice.Text);
+                    MovieTicket objTickets = new MovieTicket(cmbMovieName.SelectedItem.ToString(), txtUserName.Text, txtContactNo.Text, cmbSeat.SelectedItem.ToString(), date, txtPrice.Text);
                     objTickets.SaveTicketToFile();
                     //Then the data is displayed on the message box using the method that was created in the class
                     MessageBox.Show(objTickets.ShowTicket(), "You have booked your ticket successfully!", MessageBoxButtons.OKCancel);

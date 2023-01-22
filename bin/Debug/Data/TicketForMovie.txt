@@ -50,3 +50,4 @@ Your ticket ID is: 13fa1a2c-11aa-4801-aaf9-f0e13e8c1757,Movie Name is: Barbie in
 Your ticket ID is: c3d4c986-1e2d-4269-8931-fd848b6b76eb,Movie Name is: 2012,Your name: dfghj,Contact number: fgh,Seat: Front Row: 6Date: Sunday, January 29, 2023,Price: $5.8
 Your ticket ID is: 1dc2fd74-5f8c-44f5-8501-0fb3c74933c0,Movie Name is: 2012,Your name: dfghj,Contact number: fgh,Seat: Front Row: 4Date: Tuesday, January 24, 2023,Price: $8.29
 Your ticket ID is: 5dc5e454-7c27-490f-975a-af26570eed71,Movie Name is: Deadpool,Your name: fgh,Contact number: fghjk,Seat: Front Row: 8Date: Tuesday, January 24, 2023,Price: $5.99
+Your ticket ID is: 9e7d4e6f-b1c4-4bc9-9470-3b7c976643db,Movie Name is: Barbie in the 12 Dancing Princesses,Your name: njomza,Contact number: fjolla,Seat: Front Row: 1Date: Sunday, January 29, 2023,Price: $3.39
