@@ -33,6 +33,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Adresa">
+      <HintPath>.\Adresa.dll</HintPath>
+    </Reference>
     <Reference Include="Personi">
       <HintPath>.\Personi.dll</HintPath>
     </Reference>
