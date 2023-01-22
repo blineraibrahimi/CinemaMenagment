@@ -16,6 +16,9 @@ namespace MenaxhimiKinemas
         public DateTime LaunchYear { get; set; }
         public bool SafeForKids { get; set; } = false;
         public double Price { get; set; }
+         
+        public List<MovieTicket> tickets { get; set; }
+
 
         //The constructor checks if the parameter is null or empty
         public Movies(string movieName, string movieDescription, DateTime launchYear, int movieLength, bool safeForKids, double price)
@@ -44,6 +47,9 @@ namespace MenaxhimiKinemas
             {
                 throw new Exception("Please pick a new date!");
             }
+
+            tickets = new List<MovieTicket>();
+            Console.WriteLine(tickets.Count);
         }
     }
 }

@@ -61,6 +61,7 @@
       <DependentUpon>FrmEvents.cs</DependentUpon>
     </Compile>
     <Compile Include="ITicket.cs" />
+    <Compile Include="TicketComboBox.cs" />
     <Compile Include="Review.cs" />
     <Compile Include="Subscription.cs" />
     <Compile Include="TheatreRoom.cs" />

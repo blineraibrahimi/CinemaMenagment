@@ -19,4 +19,11 @@ namespace MenaxhimiKinemas
         string ShowTicket();
         void SaveTicketToFile();
     }
+
+    interface ITicketComboBox
+    {
+        string Name { get; set; }
+        int Value { get; set; }
+
+    }
 }

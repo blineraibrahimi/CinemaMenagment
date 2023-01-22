@@ -3,3 +3,5 @@ e4299424-a2b5-47ef-bf2f-fd8322276cd0, Elf, njfnb, Saturday, December 24, 2022, 2
 d75c5523-7cb6-460e-b320-48325faa92fa, Home Alone, nj, Saturday, December 24, 2022, 18:00 3.99
 42475a7f-8c23-4c44-80f4-c291de945289, The Princess Switch, blinera, Saturday, December 24, 2022, 18:00 3.99
 796d74e7-8fbe-47f3-ac28-b50ba2353754, The Princess Switch, blinera, Saturday, December 24, 2022, 21:00 3.99
+a738580a-70e3-41d1-a36f-21c56b0d9d4a, Elf, andi, Saturday, December 24, 2022, 18:00 3.99
+44e48119-4387-487f-9ee2-8dcd7c64eb48, The Princess Switch, bahkj, Saturday, December 24, 2022, 21:00 3.99

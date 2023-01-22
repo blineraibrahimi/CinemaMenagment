@@ -33,7 +33,6 @@ namespace MenaxhimiKinemas
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Cinema));
             this.Tabs = new System.Windows.Forms.TabControl();
             this.MoviesTab = new System.Windows.Forms.TabPage();
-            this.txtMoviePrice = new System.Windows.Forms.TextBox();
             this.label33 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
@@ -123,6 +122,7 @@ namespace MenaxhimiKinemas
             this.btnLadiesNight = new System.Windows.Forms.Button();
             this.btnValentinesDay = new System.Windows.Forms.Button();
             this.btnChristmasNight = new System.Windows.Forms.Button();
+            this.txtPriceMovie = new System.Windows.Forms.NumericUpDown();
             this.Tabs.SuspendLayout();
             this.MoviesTab.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -137,6 +137,7 @@ namespace MenaxhimiKinemas
             this.SubscriptionTab.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             this.tabEvents.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.txtPriceMovie)).BeginInit();
             this.SuspendLayout();
             // 
             // Tabs
@@ -161,7 +162,7 @@ namespace MenaxhimiKinemas
             this.MoviesTab.BackColor = System.Drawing.Color.Linen;
             this.MoviesTab.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("MoviesTab.BackgroundImage")));
             this.MoviesTab.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.MoviesTab.Controls.Add(this.txtMoviePrice);
+            this.MoviesTab.Controls.Add(this.txtPriceMovie);
             this.MoviesTab.Controls.Add(this.label33);
             this.MoviesTab.Controls.Add(this.label13);
             this.MoviesTab.Controls.Add(this.label12);
@@ -186,13 +187,6 @@ namespace MenaxhimiKinemas
             this.MoviesTab.Size = new System.Drawing.Size(769, 713);
             this.MoviesTab.TabIndex = 0;
             this.MoviesTab.Text = "Movies";
-            // 
-            // txtMoviePrice
-            // 
-            this.txtMoviePrice.Location = new System.Drawing.Point(267, 474);
-            this.txtMoviePrice.Name = "txtMoviePrice";
-            this.txtMoviePrice.Size = new System.Drawing.Size(200, 22);
-            this.txtMoviePrice.TabIndex = 20;
             // 
             // label33
             // 
@@ -1199,6 +1193,13 @@ namespace MenaxhimiKinemas
             this.btnChristmasNight.UseVisualStyleBackColor = true;
             this.btnChristmasNight.Click += new System.EventHandler(this.btnChristmasNight_Click);
             // 
+            // txtPriceMovie
+            // 
+            this.txtPriceMovie.Location = new System.Drawing.Point(267, 475);
+            this.txtPriceMovie.Name = "txtPriceMovie";
+            this.txtPriceMovie.Size = new System.Drawing.Size(200, 22);
+            this.txtPriceMovie.TabIndex = 21;
+            // 
             // Cinema
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -1229,6 +1230,7 @@ namespace MenaxhimiKinemas
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             this.tabEvents.ResumeLayout(false);
             this.tabEvents.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.txtPriceMovie)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1329,10 +1331,10 @@ namespace MenaxhimiKinemas
         private System.Windows.Forms.Label label30;
         private System.Windows.Forms.Label label29;
         private System.Windows.Forms.PictureBox pictureBox6;
-        private System.Windows.Forms.TextBox txtMoviePrice;
         private System.Windows.Forms.Label label33;
         private System.Windows.Forms.Label label34;
         private System.Windows.Forms.TextBox txtSubEmail;
+        private System.Windows.Forms.NumericUpDown txtPriceMovie;
     }
 }
 

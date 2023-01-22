@@ -51,3 +51,11 @@ Your ticket ID is: c3d4c986-1e2d-4269-8931-fd848b6b76eb,Movie Name is: 2012,Your
 Your ticket ID is: 1dc2fd74-5f8c-44f5-8501-0fb3c74933c0,Movie Name is: 2012,Your name: dfghj,Contact number: fgh,Seat: Front Row: 4Date: Tuesday, January 24, 2023,Price: $8.29
 Your ticket ID is: 5dc5e454-7c27-490f-975a-af26570eed71,Movie Name is: Deadpool,Your name: fgh,Contact number: fghjk,Seat: Front Row: 8Date: Tuesday, January 24, 2023,Price: $5.99
 Your ticket ID is: 9e7d4e6f-b1c4-4bc9-9470-3b7c976643db,Movie Name is: Barbie in the 12 Dancing Princesses,Your name: njomza,Contact number: fjolla,Seat: Front Row: 1Date: Sunday, January 29, 2023,Price: $3.39
+Your ticket ID is: dc95c8ea-3de9-4b02-ba16-a7c5638736f6,Movie Name is: andi,Your name: andi,Contact number: anid,Seat: Middle Row: 15Date: Saturday, January 28, 2023,Price: $7.85
+Your ticket ID is: ccd5576f-64fb-416f-a516-cb9305f65af0,Movie Name is: 2012,Your name: fhh,Contact number: hkh,Seat: Front Row: 10Date: Sunday, January 29, 2023,Price: $8.29
+Your ticket ID is: 5ee5801c-d14c-4009-aab6-3eeef1922a52,Movie Name is: Grown Ups,Your name: hjl,Contact number: jkk;,Seat: Front Row: 7Date: Friday, January 27, 2023,Price: $9.29
+Your ticket ID is: d499d5df-6ce1-4a99-8bdd-c3981a5a9a21,Movie Name is: 2012,Your name: blinera,Contact number: 9757,Seat: 21Date: Saturday, January 28, 2023,Price: $8.29
+Your ticket ID is: c4bd7ee9-50ee-4182-b73e-663a2643a046,Movie Name is: Barbie in the 12 Dancing Princesses,Your name: blinera,Contact number: blienra,Seat: 20Date: Thursday, January 26, 2023,Price: $3.99
+Your ticket ID is: 43b20cdf-43df-48fe-ac1c-4dc8d63ffcd7,Movie Name is: Mean Girls,Your name: blinera,Contact number: blinera,Seat: 6Date: Sunday, February 5, 2023,Price: $5.99
+Your ticket ID is: 24d0ac90-e4f7-4097-8024-15f2e2cf235b,Movie Name is: 2012,Your name: blinera,Contact number: ibrahimi,Seat: 14Date: Sunday, February 5, 2023,Price: $8.29
+Your ticket ID is: f2fdd43a-c2a3-4ea5-907b-6cd2c712d15a,Movie Name is: Mean Girls,Your name: bline,Contact number: fgj,Seat: 21Date: Saturday, February 4, 2023,Price: $5.99

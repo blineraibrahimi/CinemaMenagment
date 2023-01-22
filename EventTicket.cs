@@ -13,7 +13,7 @@ namespace MenaxhimiKinemas
     {
 
         Guid TicketId = Guid.NewGuid();
-        string EventName { get; set; }
+       public string EventName { get; set; }
         public string MovieName { get; set; }
         public string UserName { get ; set; }
         public DateTime Date { get; set; }

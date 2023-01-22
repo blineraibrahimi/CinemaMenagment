@@ -12,8 +12,10 @@ using System.Collections;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.TrackBar;
 using System.Security.Policy;
 using System.Diagnostics;
-using Personi; //dll file personi
-using Adresa; //dll file adresa
+using System.Security.AccessControl;
+using System.Security.Cryptography;
+//using Personi; //dll file personi
+//using Adresa; //dll file adresa
 
 namespace MenaxhimiKinemas
 {
@@ -41,6 +43,8 @@ namespace MenaxhimiKinemas
             new Movies ( "Black Panther: Wakanda Forever", "2012", new DateTime(2016, 6, 28), 213, false, 5.99 )
         };
 
+        //
+
         //list of tickets
         List<Subscription> subscriptionsList = new List<Subscription>()
         {
@@ -66,13 +70,15 @@ namespace MenaxhimiKinemas
                     safeForKids = false;
                 }
                
-                Movies objMovies = new Movies(txtBMovieName.Text, txtbMovieDesc.Text ,date, Convert.ToInt32(txtbMovieLength.Text), safeForKids, Convert.ToDouble(txtMoviePrice.Text));
+                Movies objMovies = new Movies(txtBMovieName.Text, txtbMovieDesc.Text ,date, Convert.ToInt32(txtbMovieLength.Text), safeForKids, Convert.ToDouble(txtPriceMovie.Value));
                 MovieList.Add(objMovies);
                 objTech = new Technology(cmbTech.Text);
                 objGenre = new Genre(cmbGenre.Text);
 
                 cmbMovieName.Items.Add(objMovies.Name_); 
                 cmbRevMovName.Items.Add(objMovies.Name_);
+
+                ShowSchedule();
 
                 MessageBox.Show($"Movie name: {objMovies.Name_}\nMovie Description: {objMovies.MovieDescription}\nLaunch Year: {date.ToLongDateString()}\nMovie Length: {objMovies.MovieLength} minutes" 
                     +$"\nSafe for kids: {objMovies.SafeForKids}\nPrice: ${objMovies.Price}" +
@@ -88,7 +94,7 @@ namespace MenaxhimiKinemas
                 txtbMovieDesc.Text = null;
                 rbtnSafe.Checked = false;
                 dtpMovieLaunch.Value = DateTime.Now;
-                txtMoviePrice = null;
+                txtPriceMovie.Value = 0;
                 
                 //Personi.Personi.
                 //Adresa.Adresa.
@@ -136,7 +142,7 @@ namespace MenaxhimiKinemas
 
                 //lblRating.Text = "";
 
-                if(numberOfSeats == null )
+                if(cmbSeat.Items.Count == 0 )
                 {
                     throw new Exception("You can't book anymore tickets!");
                 }
@@ -151,14 +157,18 @@ namespace MenaxhimiKinemas
                         lblRating.Text += "This movie has the highest rating: 5.5!";
                     }
 
-                    if(txtSubEmail.Text != "")
+                    if (txtSubEmail.Text != "")
                     {
                         CheckIfSubEmailExists(txtSubEmail.Text);
                     }
-                   
+
+                    TicketComboBox ticketComboBox = cmbSeat.SelectedItem as TicketComboBox;
                     //The datas are then passed down to the class, which are validated in the consturctor
-                    MovieTicket objTickets = new MovieTicket(cmbMovieName.SelectedItem.ToString(), txtUserName.Text, txtContactNo.Text, cmbSeat.SelectedItem.ToString(), date, txtPrice.Text);
-                    objTickets.SaveTicketToFile();
+                    MovieTicket objTickets = new MovieTicket(cmbMovieName.SelectedItem.ToString(), txtUserName.Text, txtContactNo.Text, ticketComboBox.Value, date, txtPrice.Text);
+
+                    Movies movie = MovieList.Find(x => x.Name_ == cmbMovieName.SelectedItem.ToString());
+                    movie.tickets.Add(objTickets);
+
                     //Then the data is displayed on the message box using the method that was created in the class
                     MessageBox.Show(objTickets.ShowTicket(), "You have booked your ticket successfully!", MessageBoxButtons.OKCancel);
                     cmbSeat.Items.Remove(cmbSeat.SelectedItem.ToString());
@@ -176,6 +186,7 @@ namespace MenaxhimiKinemas
         private void cmbMovieName_SelectedIndexChanged(object sender, EventArgs e)
         {
             GetMoviePrice(false);
+            AddSeats();
         }
 
         //When this button is executed, it will close the form/program
@@ -197,10 +208,11 @@ namespace MenaxhimiKinemas
         }
 
         //When the form loads, the schedule table will be displayed through the method
-        int[] numberOfSeats = new int[30];
+       
         private void Cinema_Load(object sender, EventArgs e)
         {
             ShowSchedule();
+            //to set a default name when u want to subscribe
             rbtMonth.Checked = true;
 
             foreach (Movies movie in MovieList)
@@ -208,27 +220,39 @@ namespace MenaxhimiKinemas
                 cmbMovieName.Items.Add(movie.Name_);
                 cmbRevMovName.Items.Add(movie.Name_);
             }
-            for (int i = 0; i < numberOfSeats.Length; i++)
+
+            AddSeats();
+
+        }
+        public void AddSeats()
+        {
+            List<TicketComboBox> listOfMovieTicket = new List<TicketComboBox>();
+            List<int> numberOfSeats = GetAvailableSeat();
+
+            for (int i = 0; i < numberOfSeats.Count; i++)
             {
-                numberOfSeats[i] = i + 1;
                 if (i <= 9)
                 {
-                    cmbSeat.Items.Add("Front Row: " + numberOfSeats[i]);
+                    listOfMovieTicket.Add(new TicketComboBox("Front Row: " + numberOfSeats[i], numberOfSeats[i]));
                 }
                 else if (i <= 19)
                 {
-                    cmbSeat.Items.Add("Middle Row: " + numberOfSeats[i]);
+                    listOfMovieTicket.Add(new TicketComboBox("Middle Row: " + numberOfSeats[i], numberOfSeats[i]));
                 }
-                else 
+                else
                 {
-                    cmbSeat.Items.Add("Back Row: " + numberOfSeats[i]);
+                    listOfMovieTicket.Add(new TicketComboBox("Back Row: " + numberOfSeats[i], numberOfSeats[i]));
                 }
             }
+            cmbSeat.DataSource = listOfMovieTicket;
+            cmbSeat.ValueMember = "Value";
+            cmbSeat.DisplayMember = "Name";
         }
 
         //Method that holds all the data in the schedule table
         public void ShowSchedule()
         {
+            dgv_Schedule.Rows.Clear();
             ArrayList row;
             foreach (Movies movie in MovieList)
             {
@@ -289,6 +313,38 @@ namespace MenaxhimiKinemas
             }
         }
 
+        public List<int> GetAvailableSeat()
+        {
+            //me marr emrin e filmit per me check
+            //listen prej klases
+            //edhe me i return data te listes
+            if (cmbMovieName.SelectedItem is null)
+            {
+                return Enumerable.Range(0, 0).ToList();
+            }
+
+            Movies movie = MovieList.Find(x => x.Name_ == cmbMovieName.SelectedItem.ToString());
+
+            //return empty list if the movie does not exist
+            if (movie is null)
+            {
+                return Enumerable.Range(0,0).ToList();
+            }
+            //fills the data automaticlly
+            List<int> arr = Enumerable.Range(1, 30).ToList();
+
+            List<MovieTicket> tickets = movie.tickets;
+
+            foreach (MovieTicket ticket in tickets)
+            {
+                int vartest = arr.IndexOf(ticket.Seat);
+                //finds index and removes of arr(array)
+                arr.Remove(ticket.Seat);
+
+            }
+            
+            return arr;
+        }
         public void GetMoviePrice(bool subType)
         {
             foreach (Movies movie in MovieList)

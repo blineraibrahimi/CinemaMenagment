@@ -4,3 +4,4 @@
 'Mean Girls', jn kmlkinb, has 0 star rating
 '2012', Very Good, has 5 star rating
 'Shrek', ishte fantaskik, has 3 star rating
+'andi', shume i mire, has 5 star rating

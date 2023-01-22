@@ -18,15 +18,15 @@ namespace MenaxhimiKinemas
         public string MovieName { get; set; }
         public string UserName { get; set; }
         public string PhoneNumber { get; set; }
-        public string Seat { get; set; }
+        public int Seat { get; set; }
         public DateTime Date { get; set; }
         public string Price { get; set; }
        
 
         //this constructor validates if the data is null or empty
-        public MovieTicket(string movieName, string userName, string phoneNumber, string seat, DateTime date, string price)
+        public MovieTicket(string movieName, string userName, string phoneNumber, int seat, DateTime date, string price)
         {
-            if (!string.IsNullOrEmpty(movieName) && !string.IsNullOrEmpty(userName) && !string.IsNullOrEmpty(phoneNumber) && !string.IsNullOrEmpty(seat) && !string.IsNullOrEmpty(price))
+            if (!string.IsNullOrEmpty(movieName) && !string.IsNullOrEmpty(userName) && !string.IsNullOrEmpty(phoneNumber)  && !string.IsNullOrEmpty(price))
             {
                 MovieName = movieName;
                 UserName = userName;
@@ -45,10 +45,7 @@ namespace MenaxhimiKinemas
             {
                 throw new Exception($"Please enter a date more than today {DateTime.Now.ToLongDateString()}!");
             }
-           
         }
-
-     
 
         //this method displayes the full ticket
         public string ShowTicket()
