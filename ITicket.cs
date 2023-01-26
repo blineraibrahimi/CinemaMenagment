@@ -8,9 +8,9 @@ using System.Threading.Tasks;
 
 namespace MenaxhimiKinemas
 {
+    //Polymorphism
     interface ITicket
     {
-        //Guid TicketId { get; set; }
         string MovieName { get; set; }
         string UserName { get; set; }
         DateTime Date { get; set; }
@@ -24,6 +24,5 @@ namespace MenaxhimiKinemas
     {
         string Name { get; set; }
         int Value { get; set; }
-
     }
 }

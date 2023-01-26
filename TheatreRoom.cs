@@ -23,7 +23,6 @@ namespace MenaxhimiKinemas
             {
                 throw new Exception("Please enter a movie name!");
             }
-
         }
 
         //This method returns the value + added text

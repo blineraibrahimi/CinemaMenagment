@@ -8,10 +8,10 @@ namespace MenaxhimiKinemas
 {
     public class TicketComboBox : ITicketComboBox
     {
-        public string Name { get; set ; }
+        public string Name { get; set; }
         public int Value { get; set; }
 
-        public TicketComboBox(string name, int value) 
+        public TicketComboBox(string name, int value)
         {
             this.Name = name;
             this.Value = value;

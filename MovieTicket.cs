@@ -6,7 +6,6 @@ using System.Threading.Tasks;
 using System.Web;
 using System.Windows.Forms;
 using System.Xml.Linq;
-using MenaxhimiKinemas.Abstraction;
 using System.IO;
 
 namespace MenaxhimiKinemas
@@ -21,12 +20,12 @@ namespace MenaxhimiKinemas
         public int Seat { get; set; }
         public DateTime Date { get; set; }
         public string Price { get; set; }
-       
+
 
         //this constructor validates if the data is null or empty
         public MovieTicket(string movieName, string userName, string phoneNumber, int seat, DateTime date, string price)
         {
-            if (!string.IsNullOrEmpty(movieName) && !string.IsNullOrEmpty(userName) && !string.IsNullOrEmpty(phoneNumber)  && !string.IsNullOrEmpty(price))
+            if (!string.IsNullOrEmpty(movieName) && !string.IsNullOrEmpty(userName) && !string.IsNullOrEmpty(phoneNumber) && !string.IsNullOrEmpty(price))
             {
                 MovieName = movieName;
                 UserName = userName;
@@ -64,8 +63,5 @@ namespace MenaxhimiKinemas
 
             File.AppendAllText(filepath, fullTicket + Environment.NewLine);
         }
-
-        
-
     }
 }

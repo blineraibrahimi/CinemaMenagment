@@ -4,14 +4,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Web;
-using MenaxhimiKinemas.Abstraction;
 using System.IO;
 using System.Windows.Forms;
 
 namespace MenaxhimiKinemas
 {
-    public class Review : Name
+    public class Review
     {
+        public string MovieName { get; set; }
         public string Comment { get; set; }
         public int Rating { get; set; } = 0;
 
@@ -19,12 +19,12 @@ namespace MenaxhimiKinemas
         {
             if (!string.IsNullOrEmpty(movieName) || !string.IsNullOrEmpty(comment))
             {
-                Name_ = movieName;
+                MovieName = movieName;
                 Comment = comment;
                 Rating = rating;
             }
 
-            if (rating >= 0 || rating <= 5) 
+            if (rating >= 0 || rating <= 5)
             {
                 Rating = rating;
             }
@@ -34,17 +34,13 @@ namespace MenaxhimiKinemas
             }
         }
 
-        public void SaveReviewToFile () 
+        public void SaveReviewToFile()
         {
             string filepath = "./Data/review.txt";
 
-            string fullReview = $"'{Name_}', {Comment}, has {Rating} star rating";
+            string fullReview = $"'{MovieName}', {Comment}, has {Rating} star rating";
 
             File.AppendAllText(filepath, fullReview + Environment.NewLine);
         }
-
-
     }
 }
-
-

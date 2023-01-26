@@ -33,3 +33,5 @@ C:\Users\Kaltrina\Desktop\blinera - uni\MenaxhimiKinemas\obj\Debug\MenaxhimiKine
 C:\Users\Kaltrina\Desktop\blinera - uni\MenaxhimiKinemas\obj\Debug\MenaxhimiKinemas.pdb
 C:\Users\HP\OneDrive\Desktop\MenaxhimiKinemas\obj\Debug\MenaxhimiKinemas.FrmEvents.resources
 C:\Users\Kaltrina\Desktop\blinera - uni\MenaxhimiKinemas\obj\Debug\MenaxhimiKinemas.FrmEvents.resources
+C:\Users\Kaltrina\Desktop\blinera - uni\MenaxhimiKinemas\bin\Debug\Personi.dll
+C:\Users\Kaltrina\Desktop\blinera - uni\MenaxhimiKinemas\obj\Debug\MenaxhimiKinemas.csproj.CopyComplete
